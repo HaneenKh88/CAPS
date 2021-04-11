@@ -6,10 +6,10 @@ require('../src/driver');
 setInterval(() =>
 {
     let store = {
-        StoreName: `${faker.commerce.product}`,
+        StoreName: `${faker.company.companyName()}`,
         orderID: `${faker.random.uuid()}`,
-        customerName: `${faker.name.findName}`,
-        StoreName: `${faker.address.streetName}`
+        customerName: `${faker.name.findName()}`,
+        address: `${faker.address.country()}`
 
     };
 
